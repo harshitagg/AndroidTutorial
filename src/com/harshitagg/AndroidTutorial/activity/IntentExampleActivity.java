@@ -1,12 +1,13 @@
-package com.harshitagg.AndroidTutorial;
+package com.harshitagg.AndroidTutorial.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import com.harshitagg.AndroidTutorial.R;
 
-public class MyActivity extends Activity {
+public class IntentExampleActivity extends Activity {
     /**
      * Called when the activity is first created.
      */

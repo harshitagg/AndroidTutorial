@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher">
         <activity
-            android:name="MyActivity"
+            android:name=".activity.HomeActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -19,12 +19,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DisplayMessageActivity"
+            android:name=".activity.IntentExampleActivity"
             android:label="@string/intent_example"
-            android:parentActivityName="MyActivity">
+            android:parentActivityName="com.harshitagg.AndroidTutorial.activity.HomeActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.harshitagg.AndroidTutorial.MyActivity"/>
+                android:value="com.harshitagg.AndroidTutorial.activity.HomeActivity"/>
+        </activity>
+        <activity
+            android:name=".activity.DisplayMessageActivity"
+            android:label="@string/intent_example"
+            android:parentActivityName="com.harshitagg.AndroidTutorial.activity.IntentExampleActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.harshitagg.AndroidTutorial.activity.IntentExampleActivity"/>
         </activity>
     </application>
 </manifest>
