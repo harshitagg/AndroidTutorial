@@ -39,7 +39,6 @@ public class HomeActivity extends Activity {
             	alertBox.setPositiveButton("YES",new OnClickListener() {	
 					@Override
 					public void onClick(DialogInterface arg0, int arg1) {
-						// TODO Auto-generated method stub
 						Intent intent = new Intent(getApplicationContext(), IntentExampleActivity.class);
 		                startActivity(intent);		
 					}
@@ -47,7 +46,6 @@ public class HomeActivity extends Activity {
             	alertBox.setNegativeButton("No", new OnClickListener() {
 					@Override
 					public void onClick(DialogInterface arg0, int arg1) {
-						// TODO Auto-generated method stub
 						Toast.makeText(getApplicationContext(), "You clicked on NO", Toast.LENGTH_SHORT).show();	
 					}
 				});

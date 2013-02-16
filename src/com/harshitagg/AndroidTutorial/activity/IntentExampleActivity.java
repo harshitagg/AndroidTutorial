@@ -29,7 +29,6 @@ public class IntentExampleActivity extends Activity {
     	alertBox.setNeutralButton("OK", new OnClickListener() {
 			
 			public void onClick(DialogInterface arg0, int arg1) {
-				// TODO Auto-generated method stub
 				Intent intent = new Intent(getApplicationContext(), DisplayMessageActivity.class);
 		        intent.putExtra("MESSAGE", message);
 		        startActivity(intent);
