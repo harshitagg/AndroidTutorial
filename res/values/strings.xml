@@ -4,5 +4,7 @@
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
     <string name="intent_example">Intent example</string>
-    <string name="autocomplete_text">Enter a month name</string>
+    <string name="auto_complete_text">Enter a month name</string>
+    <string name="dialog_title">Alert dialog</string>
+    <string name="dialog_message">Press a button</string>
 </resources>

@@ -27,6 +27,14 @@
                 android:value="com.harshitagg.AndroidTutorial.activity.HomeActivity"/>
         </activity>
         <activity
+            android:name=".activity.AutoCompleteExampleActivity"
+            android:label="@string/intent_example"
+            android:parentActivityName="com.harshitagg.AndroidTutorial.activity.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.harshitagg.AndroidTutorial.activity.HomeActivity"/>
+        </activity>
+        <activity
             android:name=".activity.DisplayMessageActivity"
             android:label="@string/intent_example"
             android:parentActivityName="com.harshitagg.AndroidTutorial.activity.IntentExampleActivity">
