@@ -16,7 +16,7 @@ import android.widget.Toast;
 import com.harshitagg.AndroidTutorial.R;
 
 public class HomeActivity extends Activity {
-    private static final String[] OPTIONS = new String[]{"Intent example"};
+    private static final String[] OPTIONS = new String[]{"Intent example","AutoComplete Example"};
     AlertDialog.Builder alertBox;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +35,13 @@ public class HomeActivity extends Activity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            	final int pos=position;
             	alertBox.setMessage("Do you want to go to another page");
             	alertBox.setPositiveButton("YES",new OnClickListener() {	
 					@Override
 					public void onClick(DialogInterface arg0, int arg1) {
 						Intent intent = new Intent(getApplicationContext(), IntentExampleActivity.class);
+						intent.putExtra("Position",pos);
 		                startActivity(intent);		
 					}
 				});
