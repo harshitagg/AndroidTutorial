@@ -13,7 +13,7 @@ public class AutoCompleteExampleActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.autocomplete);
+        setContentView(R.layout.autocomplete_example_layout);
 
         initializeAutoComplete();
     }

@@ -11,7 +11,7 @@ public class IntentExampleActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.intent_example_activity);
+        setContentView(R.layout.intent_example_layout);
     }
 
     public void sendMessage(View view) {
